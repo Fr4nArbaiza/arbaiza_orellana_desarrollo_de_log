@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="es-SV">
 	<head>
-		<title>Inicio de sesión</title>
+ 	    <title>Inicio de sesión: Francisco Alexander Arbaiza Orellana</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -61,10 +61,10 @@
 	}
 ?>
 	<div class="alert alert-warning <?php echo(($visible === true) ? "" : "d-none") ?>" role="alert">
-		<b><?php echo($texto); ?></b>
+		<strong><?php echo($texto); ?></strong>
 	</div>
 <?php
-	if($ip === true){
+	if($ip === false){
 		crear_editar_log($archivo,"El archivo ".__FILE__." ha sido cargado",0,$_SERVER['REMOTE_ADDR'],((array_key_exists("HTTP_REFERER",$_SERVER)) ? $_SERVER["HTTP_REFERER"] : "NULL REFERER"),$_SERVER["HTTP_USER_AGENT"]);
 ?>
 		<div class="form-row">
